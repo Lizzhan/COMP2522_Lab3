@@ -1,4 +1,4 @@
 package ca.bcit.comp2522.lab3;
 
-public class IPHONE16 {
+public class IPhone16 {
 }
