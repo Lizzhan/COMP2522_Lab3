@@ -16,7 +16,8 @@ public class IPod extends IDevice{
      * @param numOfSongs The number of songs stored on the iPod.
      * @param maxVolume The maximum volume in decibels.
      */
-    public IPod(final int numOfSongs, final double maxVolume)
+    public IPod(final int numOfSongs,
+                final double maxVolume)
     {
         super("music");
         this.numOfSongs = numOfSongs;

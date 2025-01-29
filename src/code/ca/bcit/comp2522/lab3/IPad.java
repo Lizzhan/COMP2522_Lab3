@@ -16,7 +16,8 @@ public class IPad extends IDevice{
      * @param hasCase A boolean indicating whether the iPad has a case.
      * @param osVersion The operating system version of the iPad.
      */
-    public IPad(final boolean hasCase, final String osVersion)
+    public IPad(final boolean hasCase,
+                final String osVersion)
     {
         super("learning");
         this.hasCase = hasCase;
