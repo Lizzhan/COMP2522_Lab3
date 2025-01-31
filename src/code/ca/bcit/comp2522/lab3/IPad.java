@@ -110,6 +110,6 @@ public class IPad extends IDevice{
     @Override
     public int hashCode()
     {
-        return this.getPurpose().hashCode();
+        return this.getOsVersion().hashCode();
     }
 }

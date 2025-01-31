@@ -103,6 +103,6 @@ public class IPod extends IDevice{
     @Override
     public int hashCode()
     {
-        return this.getPurpose().hashCode();
+        return Integer.hashCode(this.getNumOfSongs());
     }
 }
