@@ -33,7 +33,7 @@ public abstract class IDevice {
      * Abstract method that must be implemented by subclasses
      * to print the details of the device.
      */
-    public abstract void printDetail();
+    public abstract void printDetails();
 
     /**
      * Returns a string representation of the IDevice, including its purpose.
@@ -43,7 +43,7 @@ public abstract class IDevice {
     @Override
     public String toString()
     {
-        return "Purpose: " + this.purpose;
+        return this.purpose;
     }
 
     /**
@@ -58,10 +58,9 @@ public abstract class IDevice {
         if (o == this) {
             return true;
         }
-        if (!(o instanceof IDevice)) {
+        if (!(o instanceof IDevice otherDevice)) {
             return false;
         }
-        IDevice otherDevice = (IDevice) o;
         return this.purpose.equals(otherDevice.purpose);
     }
 

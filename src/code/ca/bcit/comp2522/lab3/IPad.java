@@ -64,7 +64,7 @@ public class IPad extends IDevice{
      * Prints the details of the iPad, including whether it has a case and its operating system version.
      */
     @Override
-    public void printDetail()
+    public void printDetails()
     {
         System.out.println("IPad Has Case: " + this.hasCase);
         System.out.println("Operating System Version: " + this.osVersion);
@@ -77,11 +77,11 @@ public class IPad extends IDevice{
      */
     @Override
     public String toString(){
-        StringBuilder sb = new StringBuilder();
-        sb.append(super.toString());
-        sb.append("IPad Has Case: " + this.hasCase);
-        sb.append("Operating System Version: " + this.osVersion);
-        return sb.toString();
+        String sb = super.toString() + " " +
+                    this.hasCase + " " +
+                    this.osVersion + " ";
+
+        return sb;
     }
 
     /**
@@ -96,10 +96,9 @@ public class IPad extends IDevice{
         if (o == this) {
             return true;
         }
-        if (!(o instanceof IPod)){
+        if (!(o instanceof IPad otherDevice)){
             return false;
         }
-        IPad otherDevice = (IPad) o;
         return this.getOsVersion().equals(otherDevice.getOsVersion());
     }
 

@@ -55,7 +55,7 @@ public class IPod extends IDevice{
      * Prints the details of the iPod, including the number of songs and maximum volume.
      */
     @Override
-    public void printDetail()
+    public void printDetails()
     {
         System.out.println("Number of Songs: " + numOfSongs);
         System.out.println("Max Volume: " + maxVolume);
@@ -70,12 +70,11 @@ public class IPod extends IDevice{
     @Override
     public String toString()
     {
-        StringBuilder sb = new StringBuilder();
-        sb.append(super.toString());
-        sb.append("\nNumber of Songs: " + numOfSongs);
-        sb.append("\nMax Volume: " + maxVolume);
+        String sb = super.toString() +
+                    numOfSongs + " " +
+                    maxVolume + " ";
 
-        return sb.toString();
+        return sb;
     }
 
     /**
@@ -90,10 +89,9 @@ public class IPod extends IDevice{
         if (o == this) {
             return true;
         }
-        if (!(o instanceof IPod)){
+        if (!(o instanceof IPod otherDevice)){
             return false;
         }
-        IPod otherDevice = (IPod) o;
         return this.numOfSongs == otherDevice.numOfSongs;
     }
 
