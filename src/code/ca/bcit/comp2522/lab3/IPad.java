@@ -47,7 +47,7 @@ public class IPad extends IDevice{
      *
      * @param osVersion The operating system version to set.
      */
-    public void setOsVersion(String osVersion) {
+    public final void setOsVersion(String osVersion) {
         this.osVersion = osVersion;
     }
 
@@ -56,7 +56,7 @@ public class IPad extends IDevice{
      *
      * @param hasCase A boolean indicating whether the iPad should have a case.
      */
-    public void setHasCase(boolean hasCase) {
+    public final void setHasCase(boolean hasCase) {
         this.hasCase = hasCase;
     }
 

@@ -6,7 +6,7 @@ package ca.bcit.comp2522.lab3;
  * @author Leslie Zhang, Angelo Santos
  * @version 1.0
  */
-public abstract class IDevice {
+abstract class IDevice {
     private final String purpose;
 
     /**

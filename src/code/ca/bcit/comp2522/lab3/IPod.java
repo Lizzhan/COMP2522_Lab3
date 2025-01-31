@@ -47,7 +47,7 @@ public class IPod extends IDevice{
      *
      * @param numOfSongs The number of songs to set.
      */
-    public void setNumOfSongs(int numOfSongs) {
+    public final void setNumOfSongs(int numOfSongs) {
         this.numOfSongs = numOfSongs;
     }
 
