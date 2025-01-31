@@ -112,6 +112,6 @@ public class IPhone extends IDevice
     @Override
     public int hashCode()
     {
-        return this.getPurpose().hashCode();
+        return Double.hashCode(this.getPhonePlanTimeLeftMinutes());
     }
 }

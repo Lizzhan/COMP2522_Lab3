@@ -102,6 +102,6 @@ public class IPhone16 extends IPhone {
      */
     @Override
     public int hashCode() {
-        return this.getPurpose().hashCode();
+        return Boolean.hashCode(this.hasHighResolutionCamera());
     }
 }
